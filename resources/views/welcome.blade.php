@@ -11,7 +11,27 @@
     </head>
     <body>
 
-        
+        @foreach ($treni as $treno)
+        <div>
+            Azienda: {{ $treno->nome_azienda }}
+            /
+            Stazione di partenza: {{ $treno->stazione_partenza }}
+            /
+            Stazione di arrivo: {{ $treno->stazione_arrivo }}
+            /
+            Codice treno: {{ $treno->codice_treno }}
+            /
+            Numero carrozze: {{ $treno->numero_carrozze }}
+            /
+            In orario: {{ $treno->in_orario }}
+            /
+            Cancellato: {{ $treno->cancellato }}
+            /
+            Orario di partenza: {{ $treno->orario_partenza }}
+            /
+            Orario di arrivo: {{ $treno->orario_arrivo }}
+        </div>
+        @endforeach
 
     </body>
 </html>
